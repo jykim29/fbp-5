@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/styles.css">
+  
+  <title>Intro component with sign up form by 돈기브업</title>
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <div class="item-1">
+        <h1>Learn to code by watching others</h1>
+        <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+          but understanding how developers think is invaluable. 
+        </p>
+      </div>
+      <div class="item-2">
+        <div class="try">
+          <span>Try it free 7 days</span> then $20/mo. thereafter
+        </div>
+        <form id="form">
+          <div>
+            <input class="input" id="fName" type="text" placeholder="First Name" maxlength="20" value="" required>
+            <img class="error hidden" src="./images/icon-error.svg" alt="error">
+            <span class="msg" id="msg-1"></span>
+          </div>
+          <div>
+            <input class="input" id="lName" type="text" placeholder="Last Name" maxlength="20" value="" required>
+            <img class="error hidden" src="./images/icon-error.svg" alt="error">
+            <span class="msg" id="msg-2"></span>
+          </div>
+          <div>
+            <input class="input" id="email" type="email" placeholder="Email Address" maxlength="30" value="" required>
+            <img class="error hidden" src="./images/icon-error.svg" alt="error">
+            <span class="msg" id="msg-3"></span>
+          </div>
+          <div>
+            <input class="input" id="pw" type="password" placeholder="Password" minlength="10" maxlength="18" value="" required>
+            <img class="error hidden" src="./images/icon-error.svg" alt="error">
+            <span class="msg" id="msg-4"></span>
+          </div>
+          
+          <input id="btn" type="submit" value="CLAIM YOUR FREE TRIAL">
+          <div class="term">By clicking the button, you are agreeing to our <span>Terms and Services</span></div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">돈기브업</a>.
+    </p>
+  </footer>
+  <script src="./js/index.js" type="text/javascript"></script>
+</body>
+</html>
